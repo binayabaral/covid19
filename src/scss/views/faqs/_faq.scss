@@ -1,0 +1,39 @@
+.faqs-listing {
+	padding-top: 30px;
+
+	.faq {
+		border: 1px solid $white;
+		padding: 20px 10px;
+		margin-bottom: 30px;
+	}
+
+	.title {
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 17px;
+
+		&.question {
+			color: #f14444;
+		}
+
+		&.answer {
+			color: #27ca27;
+		}
+	}
+
+	.txt {
+		display: block;
+		margin-bottom: 15px;
+		font-size: 19px;
+		text-align: justify;
+	}
+}
+
+.faqs {
+	select {
+		background: rgb(58, 57, 57);
+		outline: none;
+		border: none;
+	}
+}

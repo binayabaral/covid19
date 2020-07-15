@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import './scss/main.scss';
+
+import Header from './layout/Header';
+import Footer from './layout/Footer';
+
+import World from './views/world';
+import Nepal from './views/nepal';
+import RecentNews from './views/news';
+import Myths from './views/myths';
+import Faqs from './views/faqs';
+
+import NewsArticlesProvider from './contexts/NewsContext';
+import MythArticlesProvider from './contexts/MythsContext';
+import FaqsArticlesProvider from './contexts/FaqsContext';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<FaqsArticlesProvider>
+			<MythArticlesProvider>
+				<NewsArticlesProvider>
+					<Router>
+						<Header />
+						<Switch>
+							<Route path="/" exact component={Nepal} />
+							<Route path="/world" component={World} />
+							<Route path="/news" component={RecentNews} />
+							<Route path="/myths" component={Myths} />
+							<Route path="/faqs" component={Faqs} />
+						</Switch>
+						<Footer />
+					</Router>
+				</NewsArticlesProvider>
+			</MythArticlesProvider>
+		</FaqsArticlesProvider>
+	);
 }
 
 export default App;

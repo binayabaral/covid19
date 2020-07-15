@@ -23,8 +23,8 @@ const Faqs = () => {
 				<h6>Following are the frequently asked questions</h6>
 				<span>Select Language: </span>
 				<select id="language" onChange={handleLanguageChange}>
-					<option value="nepali">Nepali</option>
 					<option value="english">English</option>
+					<option value="nepali">Nepali</option>
 				</select>
 				<div className="faqs-listing">
 					{faqs.map(faq => (

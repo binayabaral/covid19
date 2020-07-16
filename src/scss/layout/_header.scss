@@ -70,6 +70,12 @@
 				margin-left: 30px;
 			}
 		}
+
+		&.active {
+			a {
+				color: $white;
+			}
+		}
 	}
 
 	a {

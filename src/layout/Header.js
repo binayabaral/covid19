@@ -18,6 +18,15 @@ const Header = () => {
 
 	const [navActive, setNavActive] = useState(false);
 
+	const handleNavMenuClick = e => {
+		const menuArray = Array.from(document.getElementsByClassName('active'));
+		menuArray.forEach(menuItem => {
+			menuItem.classList.remove('active');
+		});
+		e.target.parentElement.classList.add('active');
+		handleNavClick();
+	};
+
 	const handleNavClick = () => {
 		if (navActive) {
 			setNavActive(false);
@@ -38,27 +47,27 @@ const Header = () => {
 					</div>
 					<ul className="navigation-menu">
 						<li>
-							<Link to="/world" onClick={handleNavClick}>
+							<Link to="/world" onClick={handleNavMenuClick}>
 								World
 							</Link>
 						</li>
-						<li>
-							<Link to="/" onClick={handleNavClick}>
+						<li className="active">
+							<Link to="/" onClick={handleNavMenuClick}>
 								Nepal
 							</Link>
 						</li>
 						<li>
-							<Link to="news" onClick={handleNavClick}>
+							<Link to="news" onClick={handleNavMenuClick}>
 								Recent News
 							</Link>
 						</li>
 						<li>
-							<Link to="myths" onClick={handleNavClick}>
+							<Link to="myths" onClick={handleNavMenuClick}>
 								Myths
 							</Link>
 						</li>
 						<li>
-							<Link to="faqs" onClick={handleNavClick}>
+							<Link to="faqs" onClick={handleNavMenuClick}>
 								FAQs
 							</Link>
 						</li>

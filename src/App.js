@@ -15,26 +15,29 @@ import Faqs from './views/faqs';
 import NewsArticlesProvider from './contexts/NewsContext';
 import MythArticlesProvider from './contexts/MythsContext';
 import FaqsArticlesProvider from './contexts/FaqsContext';
+import WorldHistoryDataProvider from './contexts/WorldHistoryContext';
 
 function App() {
 	return (
-		<FaqsArticlesProvider>
-			<MythArticlesProvider>
-				<NewsArticlesProvider>
-					<Router>
-						<Header />
-						<Switch>
-							<Route path="/" exact component={Nepal} />
-							<Route path="/world" component={World} />
-							<Route path="/news" component={RecentNews} />
-							<Route path="/myths" component={Myths} />
-							<Route path="/faqs" component={Faqs} />
-						</Switch>
-						<Footer />
-					</Router>
-				</NewsArticlesProvider>
-			</MythArticlesProvider>
-		</FaqsArticlesProvider>
+		<WorldHistoryDataProvider>
+			<FaqsArticlesProvider>
+				<MythArticlesProvider>
+					<NewsArticlesProvider>
+						<Router>
+							<Header />
+							<Switch>
+								<Route path="/" exact component={Nepal} />
+								<Route path="/world" component={World} />
+								<Route path="/news" component={RecentNews} />
+								<Route path="/myths" component={Myths} />
+								<Route path="/faqs" component={Faqs} />
+							</Switch>
+							<Footer />
+						</Router>
+					</NewsArticlesProvider>
+				</MythArticlesProvider>
+			</FaqsArticlesProvider>
+		</WorldHistoryDataProvider>
 	);
 }
 

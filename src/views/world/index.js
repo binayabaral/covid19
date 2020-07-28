@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { WorldHistoryData } from '../../contexts/WorldHistoryContext';
 
 import Selector from './components/Selector';
-import StatBox from './components/StatBox';
-import Graph from './components/Graph';
+import StatBox from '../../common-components/StatBox';
+import Graph from '../../common-components/Graph';
 
 const World = () => {
 	const worldHistoryData = useContext(WorldHistoryData);

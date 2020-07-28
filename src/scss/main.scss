@@ -21,13 +21,16 @@
 @import 'layout/header';
 @import 'layout/footer';
 
+//common components
+@import 'common-components/graph';
+@import 'common-components/statistics';
+
 //views
 @import 'views/news/news-articles';
 @import 'views/myths/myths';
 @import 'views/faqs/faq';
 @import 'views/world/world';
-@import 'views/world/statistics';
-@import 'views/world/graph';
+@import 'views/nepal/nepal';
 
 //icomoon
 @import 'vendors/icomoon/style';

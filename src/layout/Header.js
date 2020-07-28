@@ -57,17 +57,17 @@ const Header = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="news" onClick={handleNavMenuClick}>
+							<Link to="/news" onClick={handleNavMenuClick}>
 								Recent News
 							</Link>
 						</li>
 						<li>
-							<Link to="myths" onClick={handleNavMenuClick}>
+							<Link to="/myths" onClick={handleNavMenuClick}>
 								Myths
 							</Link>
 						</li>
 						<li>
-							<Link to="faqs" onClick={handleNavMenuClick}>
+							<Link to="/faqs" onClick={handleNavMenuClick}>
 								FAQs
 							</Link>
 						</li>

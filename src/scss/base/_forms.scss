@@ -59,3 +59,10 @@ label {
 	display: block;
 	margin-bottom: 5px;
 }
+
+select {
+	padding: 5px 10px;
+	background: $black;
+	border: none;
+	outline: none;
+}

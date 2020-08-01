@@ -22,6 +22,11 @@ const Footer = () => {
 							<span className="icon-instagram"></span>
 						</a>
 					</li>
+					<li>
+						<a href="https://github.com/binayabaral" target="_blank" rel="noopener noreferrer">
+							<span className="icon-github"></span>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</footer>

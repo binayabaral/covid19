@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { NepalData } from '../../contexts/NepalDataContext';
 
 import Selector from './components/Selector';
@@ -7,6 +7,12 @@ import Graph from '../../common-components/Graph';
 
 const Nepal = () => {
 	const nepalData = useContext(NepalData);
+
+	useEffect(() => {
+		nepalData.setSelectedProvince('');
+		// eslint-disable-next-line
+	}, []);
+
 	return (
 		<section className="nepal-info">
 			<div className="container">

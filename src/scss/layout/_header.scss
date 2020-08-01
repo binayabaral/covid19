@@ -71,8 +71,8 @@
 			}
 		}
 
-		&.active {
-			a {
+		a {
+			&.active {
 				color: $white;
 			}
 		}

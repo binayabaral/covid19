@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import logo from '../images/logo.svg';
 
@@ -18,15 +18,6 @@ const Header = () => {
 
 	const [navActive, setNavActive] = useState(false);
 
-	const handleNavMenuClick = e => {
-		const menuArray = Array.from(document.getElementsByClassName('active'));
-		menuArray.forEach(menuItem => {
-			menuItem.classList.remove('active');
-		});
-		e.target.parentElement.classList.add('active');
-		handleNavClick();
-	};
-
 	const handleNavClick = () => {
 		if (navActive) {
 			setNavActive(false);
@@ -42,34 +33,34 @@ const Header = () => {
 					<a href="http://www.binayabaral.com.np" target="_blank" rel="noopener noreferrer" className="logo">
 						<img src={logo} alt="binayabaral.com.np" />
 					</a>
-					<div className="nav-opener" onClick={handleNavClick}>
+					<Link to="#" className="nav-opener" onClick={handleNavClick}>
 						<span></span>
-					</div>
+					</Link>
 					<ul className="navigation-menu">
 						<li>
-							<Link to="/world" onClick={handleNavMenuClick}>
+							<NavLink to="/world" activeClassName="active" onClick={handleNavClick}>
 								World
-							</Link>
+							</NavLink>
 						</li>
-						<li className="active">
-							<Link to="/" onClick={handleNavMenuClick}>
+						<li>
+							<NavLink to="/" exact activeClassName="active" onClick={handleNavClick}>
 								Nepal
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/news" onClick={handleNavMenuClick}>
+							<NavLink to="/news" activeClassName="active" onClick={handleNavClick}>
 								Recent News
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/myths" onClick={handleNavMenuClick}>
+							<NavLink to="/myths" activeClassName="active" onClick={handleNavClick}>
 								Myths
-							</Link>
+							</NavLink>
 						</li>
 						<li>
-							<Link to="/faqs" onClick={handleNavMenuClick}>
+							<NavLink to="/faqs" activeClassName="active" onClick={handleNavClick}>
 								FAQs
-							</Link>
+							</NavLink>
 						</li>
 					</ul>
 				</nav>

@@ -1,4 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Coronavirus Tracking Application
+
+Coronavirus Statistics with data from Ministry of Health and Population, Nepal.
+
+### Statistics for Nepal
+
+Search By: Province, District and Municipality.
+
+### World Statistics
+
+Search By Country.
+
+### Recent News from Nepali Media
+
+See all the recent News related to coronavirus from Nepali Media.
+
+### Frequently Asked Questions
+
+Get answers to some most asked questions about the coronavirus pandemic.
+
+### Myths and Realities
+
+Debunk myths related to coronavirus
+
+## Live Demo
+
+This Project is live [here](https://covid19.binayabaral.com.np/).
+
+## Project Starter
+
+This project was made with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 

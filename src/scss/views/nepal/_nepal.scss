@@ -1,14 +1,14 @@
 .region-selectors {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -10px;
 
-	select {
-		margin: 0 10px 10px;
+  select {
+    margin: 0 10px 10px;
 
-		@include media('screen', '>=tablet') {
-			margin-bottom: 0;
-		}
-	}
+    @include media('screen', '>=tablet') {
+      margin-bottom: 0;
+    }
+  }
 }

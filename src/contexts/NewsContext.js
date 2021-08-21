@@ -5,17 +5,17 @@ import getNews from '../api/News';
 export const NewsArticles = createContext();
 
 const NewsArticlesProvider = props => {
-	const [articles, setArticles] = useState([]);
+  const [articles, setArticles] = useState([]);
 
-	useEffect(() => {
-		const fetchArticles = async () => {
-			const articles = await getNews();
-			setArticles(articles);
-		};
-		fetchArticles();
-	}, []);
+  useEffect(() => {
+    const fetchArticles = async () => {
+      const articles = await getNews();
+      setArticles(articles);
+    };
+    fetchArticles();
+  }, []);
 
-	return <NewsArticles.Provider value={articles}>{props.children}</NewsArticles.Provider>;
+  return <NewsArticles.Provider value={articles}>{props.children}</NewsArticles.Provider>;
 };
 
 export default NewsArticlesProvider;

@@ -1,20 +1,20 @@
 {
-	"short_name": "Covid19 Portal",
-	"name": "Covid19 Related Information Nepal",
-	"icons": [
-		{
-			"src": "favicon.ico",
-			"sizes": "24x24",
-			"type": "image/x-icon"
-		},
-		{
-			"src": "seo.jpg",
-			"type": "image/jpg",
-			"sizes": "1000x518"
-		}
-	],
-	"start_url": ".",
-	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff"
+  "short_name": "Covid19 Portal",
+  "name": "Covid19 Related Information Nepal",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "24x24",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "seo.jpg",
+      "type": "image/jpg",
+      "sizes": "1000x518"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }

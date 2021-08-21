@@ -1,5 +1,3 @@
-# App Was developed using nepalcorona.info API. API is not working anymore. Sorry :(
-
 ## Coronavirus Tracking Application
 
 Coronavirus Statistics with data from Ministry of Health and Population, Nepal.

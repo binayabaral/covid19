@@ -1,9 +1,9 @@
-@import "variables";
+@import 'variables';
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2fvmw3');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2fvmw3#iefix') format('embedded-opentype'),
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2fvmw3');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?2fvmw3#iefix') format('embedded-opentype'),
     url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?2fvmw3') format('truetype'),
     url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?2fvmw3') format('woff'),
     url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?2fvmw3##{$icomoon-font-family}') format('svg');
@@ -12,7 +12,9 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"], %icomoon {
+[class^='icon-'],
+[class*=' icon-'],
+%icomoon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: never;
@@ -29,22 +31,21 @@
 
 .icon-facebook {
   &:before {
-    content: $icon-facebook; 
+    content: $icon-facebook;
   }
 }
 .icon-instagram {
   &:before {
-    content: $icon-instagram; 
+    content: $icon-instagram;
   }
 }
 .icon-twitter {
   &:before {
-    content: $icon-twitter; 
+    content: $icon-twitter;
   }
 }
 .icon-github {
   &:before {
-    content: $icon-github; 
+    content: $icon-github;
   }
 }
-

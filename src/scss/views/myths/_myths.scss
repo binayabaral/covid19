@@ -1,32 +1,32 @@
 .myth-articles {
-	padding-top: 20px;
+  padding-top: 20px;
 
-	.txt {
-		display: block;
-		margin-bottom: 15px;
-		font-size: 19px;
-		text-align: justify;
-	}
+  .txt {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 19px;
+    text-align: justify;
+  }
 
-	.myth {
-		border: 1px solid $white;
-		padding: 20px 10px;
-		margin-bottom: 30px;
+  .myth {
+    border: 1px solid $white;
+    padding: 20px 10px;
+    margin-bottom: 30px;
 
-		&--title {
-			text-transform: uppercase;
-			display: block;
-			color: #f14444;
-			font-size: 17px;
-			margin-bottom: 5px;
-		}
-	}
+    &--title {
+      text-transform: uppercase;
+      display: block;
+      color: #f14444;
+      font-size: 17px;
+      margin-bottom: 5px;
+    }
+  }
 
-	.reality--title {
-		text-transform: uppercase;
-		display: block;
-		color: #27ca27;
-		font-size: 17px;
-		margin-bottom: 5px;
-	}
+  .reality--title {
+    text-transform: uppercase;
+    display: block;
+    color: #27ca27;
+    font-size: 17px;
+    margin-bottom: 5px;
+  }
 }
